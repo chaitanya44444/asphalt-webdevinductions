@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function credit() {
+      alert("the story,main part text,specs were copied from sources online and the story video code was  a bit from stackoverflow" )}
+  </script>
+  <title> Website Inductions</title>
+  <link rel="icon" type="image/jpg" href="https://e0.pxfuel.com/wallpapers/691/861/desktop-wallpaper-suzuki-jimny-cool-suzuki-logo.jpg">
+<style>
+.header {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area:header;
+}
+
+.header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.sidebar { grid-area: sidebar; }
+.main2 { grid-area: main2; }
+.main2 video{
+  width:100%;
+  height:fit-content;
+}
+.main{
+  grid-area:main;
+}
+.right { grid-area: right; }
+.story {
+  grid-area: story;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.story video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+.safety {
+  grid-area: safety;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.safety img {
+  width: 100%;
+  height: auto;
+}
+
+.form{ grid-area: form; 
+background-color: #333;
+    }
+.footer { 
+grid-area: footer;
+background-color: black; 
+color:white;}
+.specs{
+  grid-area:specs;
+  border:10px solid white;
+}
+.bg{
+  grid-area:bg;
+  border:10px solid white;
+}
+.bg1{
+  grid-area:bg1;
+  border:10px solid white;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'main2 main2 main2 main2 main2 main2'
+  'sidebar main main main right right'
+  'sidebar main main main right right'
+  'story story story story story story'
+  'safety safety safety  safety safety safety'
+  'form form form form form form'
+  'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  width:auto;
+  height:auto;
+}
+.grid-container  div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border:10px solid  #333;
+}
+</style>
+</head>
+<body onload="credit()" >
+  <div class="grid-container">
+    <div class="header">
+      <u><a style="background-color: #ddd;color:black;" href="/">Home</a></u>&nbsp;
+      <a href="/about">About</a>&nbsp;
+      <a href="/signup">Signup</a>&nbsp;
+      <a href="/contact">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+    </div>
+    
+    <div class="sidebar">
+      <p>Welcome to the Suzuki Jimny website! Explore all the details about Suzuki Jimny.</p>
+      <br>
+      <h1>Specs of Suzuki Jimny are-</h1>
+      <ul>
+        <li>Length: 3645mm</li>
+        <li>Width: 1645mm</li>
+        <li>Height: 1725mm</li>
+        <li>Wheelbase: 2250mm</li>
+        <li>Weight: 1095kg to 1110kg</li>
+        <li>Turning circle: 9.8 metres</li>
+        <li>Boot space: 85 litres (rear seats up), 377L (rear seats down)</li>
+        <li>Towing capacity: 350kg (unbraked), 1300kg (braked)</li>
+        <li>Approach angle: 37 degrees</li>
+        <li>Breakover angle: 28 degrees</li>
+        <li>Departure angle: 49 degrees</li>
+      </ul>
+    </div>
+    
+    <div class="main2">
+      <video autoplay loop muted>
+        <source src="https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/banner/jimny-1.mp4?modified=20230112000817" type="video/mp4">
+      </video>
+    </div>
+    <div class="main"> <p>The Suzuki Jimny (Japanese: スズキ・ジムニー, Suzuki Jimunī) is a series of four-wheel drive off-road mini SUVs, manufactured and marketed by Japanese automaker Suzuki since 1970.The Jimny's most important characteristic is its durability and capability.</p></div>
+    
+    <div class="right">
+      <h1>Some FAQS-</h1>
+      <ul>
+        <li>What is the average amount of fuel used per kilometer?</li>
+        <li>What are the dimensions?</li>
+        <li>What is the weight of the car?</li>
+        <li>What colours does it come in?</li>
+        <li>How much time for 0 to 60 kilometers?</li>
+      </ul>
+    </div>
+
+    <div class="story">
+      <video autoplay loop muted>
+        <source src="https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/brand-philosophy/3rd_gen_jimny.mp4?modified=20230111120334" type="video/mp4">
+      </video>
+     <strong> <h1 style="color:#ddd">A STORY PASSED DOWN FOUR GENERATIONS</h1>
+      <br>
+      <p style="color:#ddd">
+        Born in 1970, the Jimny has taken a long journey down the evolutionary road. Selected by nature for the harshest conditions, it has seen and survived the worst. Only getting tougher with experience as its teacher. Inspiring future generations to go find their own story for the ages
+      </p>
+      </strong>
+    </div>
+    
+    <div class="safety">
+      <img src="https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/brand-safety/jimmy-811x629-1.webp?modified=20230111070843">
+    </div>
+    
+    <div class="form">
+
+      <form>
+        <h1>Contact Info for interest</h2>
+        <input type="text" placeholder="Name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    </div>
+    <div class="footer"> &copy; Suzuki Jimny &copy; 2023</div>
+  </div>
+  
+</body>
+</html>
